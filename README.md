@@ -15,9 +15,9 @@ Hi ! Welcome to my terminal app generating proffessional README.md files.
 ## Installation
 ` npm i `
 ## Usage
-[Screenshot1]()
-[Screenshot2]()
-[Screenshot3]()
+[Screenshot1](./images/Screenshot1.png)
+[Screenshot2](./images/Screenshot2.png)
+[Screenshot3](./images/Screenshot3.png)
 ## License
 This project is licensed under the MIT license.
 ## Contributing
