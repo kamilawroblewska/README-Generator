@@ -3,12 +3,12 @@ function renderLicenseBadge(License) {
   let licenseOption = License;
   let licenseBadge = '';
 
- if (licenseOption === 'Apache 2.0') {
-      licenseBadge = '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
+ if (licenseOption === 'Apache License 2.0') {
+      licenseBadge = '![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)'
   } else if (licenseOption === 'MIT') {
-      licenseBadge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
+      licenseBadge = '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)'
   } else if (licenseOption === 'Unlicense') {
-    licenseBadge = '[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)'
+    licenseBadge = '![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)'
   } else {
     licenseBadge = '';
   }
@@ -20,8 +20,8 @@ function renderLicenseSection(License) {
   let licenseOption = License;
   let licenseMessage = '';
 
-   if (licenseOption === 'Apache 2.0') {
-    licenseMessage = 'License" shall mean the terms and conditions for use, reproduction, and distribution as defined by Sections 1 through 9 of this document.';
+   if (licenseOption === 'Apache License 2.0') {
+    licenseMessage = 'License shall mean the terms and conditions for use, reproduction, and distribution as defined by Sections 1 through 9 of this document.';
   } else if (licenseOption === 'MIT') {
     licenseMessage = 'Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to dealin the Software without restriction, including without limitation the rightsto use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions...';
   } else if (licenseOption === 'Unlicense') {
@@ -55,6 +55,7 @@ ${data.Description}
 ## Usage
  ${data.Usage}
 ## License
+${data.License}
 ${renderLicenseSection(data.License[0])}
 ## Contributing
  ${data.Contributing}
