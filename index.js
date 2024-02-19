@@ -1,10 +1,12 @@
+// Packages needed for this application
 const fs = require("fs");
 const path = require('path');
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
-// array of questions for user
-const questions = [{
+// array of questions for user input
+const questions = [
+    {
     type: "input",
     message: "What is the title of the project?",
     name: "Title"
@@ -19,13 +21,15 @@ const questions = [{
     name: "Installation"
 }, {
     type: "input",
-    message: "How is the app usage? Give some instructions.",
+    message: "Provide instructions and examples for use.",
     name: "Usage"
 }, {
     type: "checkbox",
     message: "Please select a license.",
     name: "License",
     choices: ["MIT", "Apache License 2.0", "Unlicense" ]
+    // When the user has choosen a License then a correspoding Badge is generated near the top of the page
+    // A notice explains which license the application is covered under License
 }, {
     type: "input",
     message: "Who contributed to this project?",
