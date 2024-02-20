@@ -1,8 +1,8 @@
 # README file Generator
 
-  ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
-[WALKTHROUGH VIDEO](https://youtu.be/EPKQA78WZHk)
-  [Github Repo](https://github.com/kamilawroblewska/README-Generator)
+  ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)  
+[WALKTHROUGH VIDEO](https://youtu.be/EPKQA78WZHk)  
+  [Github Repo](https://github.com/kamilawroblewska/README-Generator)  
 ## Description
 Hi ! Welcome to my terminal app generating proffessional README.md files.
 ## Table od Contents
